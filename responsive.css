@@ -1,0 +1,139 @@
+/* for laptop responsive */
+@media screen and (max-width: 1170px) {
+        /* Hero Section */
+    .herotxt h1 {
+        font-size: 3rem;
+    }
+    .heroimg img {
+        max-width: 23rem;
+    }
+    .contentleft {
+        gap: 19px;
+    }
+}
+/* for tablet responsive */
+@media screen and (max-width: 768px) {
+    /* Header Section */
+    .hamMenu{
+        display: block !important;
+    }
+    .nav-links {
+        display: none;
+        /* menu show hide */
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        padding: 23px 0;
+        text-align: center;
+    }
+    .nav-links::after{
+        background-color: red;
+        display: block;
+        width:100px;
+        height: 100px;
+    }
+    .nav-links li{
+        padding: 13px 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown-content {
+        position: relative;
+        background-color: var(--color-trans);
+        box-shadow: none;
+        transform: translateX(-50%) !important;
+        left: 50% !important;
+    }
+    .conatactButton{
+        display: none;
+    }
+    .nav-links{
+        flex: none;
+    }
+        /* Hero Section */
+    .heroimg {
+        display: none;
+    }
+    .herodiv {
+        padding-bottom: 46px;
+    }
+    .heromidgap{
+        gap: 0;
+    }
+    .heroimg img {
+        max-width: 31rem;
+    }
+    .herotxt h1 {
+        font-size: 4.4rem;
+    }
+    .herotxt p {
+        font-size: 1.5rem;
+    }
+    /* Description Section */
+    .desdiv {
+        padding-bottom: 2rem;
+    }
+    .destxt p{
+        font-size: 1rem;
+    }
+    .desimg{
+        display: none;
+    }
+    /* Price Table */
+}
+/* for mobile responsive */
+@media screen and (max-width: 425px) {
+    .midalign {
+        padding: 0 1rem;
+    }
+        /* Header Section */
+        /* Hero Section */
+    .contentleft {
+        text-align: center;
+    }
+    .herotxt h1 {
+        font-size: 2.5rem;
+    }
+    .herotxt p {
+        font-size: 1rem;
+    }
+    .herobutton {
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+    }
+    .herobutton a button{
+        width: 100%;
+    }
+    /* Description Section */
+    .destxt {
+        text-align: center;
+    }
+    .destxt h1 {
+        font-size: 2rem;
+    }
+    .destxt p {
+        font-size: 1rem;
+    }
+    /* Price Table */
+    .pricesection {
+        text-align: center;
+    }
+    .pricediv {
+        padding: 65px 0;
+    }
+    .prbox ul {
+        text-align: left;
+    }
+    .pricebox {
+        gap: 20px;
+    }
+    .pricediv h1 {
+        font-size: 2rem;
+    }
+    .price-button a button {
+        width: 100%;
+    }
+    /* key feature section */
+}

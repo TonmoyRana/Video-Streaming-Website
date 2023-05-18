@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: var(--font-chivo);
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root {
+    /* fonts */
+    --font-chivo: chivo;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-whitesmoke-100: #ededed;
+    --color-gray: #101828;
+    --color-lightgray: #10182880;
+    --color-linen: #faede3;
+    --color-black: #000;
+    --color-teal: #006d77;
+    --color-lightblue: #c9f3f6;
+    --color-trans: rgb(0 0 0 / 0%);
+    --color-orange: #f0c673;
+    --color-green:#3bc74c;
+    --color-red: #e11d38;
+    --color-green-v2: #a1ccc9;
+    --color-green-v3: #9de9bb;
+    --color-green-v4: #d5e4b4;
+    --color-blue-v1: #c6f1ff;
+    --color-blue-v2: #a1b2cc;
+    --color-orange-v2: #ffd7b1;
+    --color-red-v2: #ffc6d3;
+    --color-red-v3: #e4b4b4;
+}
