@@ -1,17 +1,22 @@
-//base link set
-// import config from '/config.js'
-
-const base = document.createElement('base');
-    base.href = config.baseHref;
-    document.head.prepend(base);
+document.addEventListener("DOMContentLoaded", () => {
+    // Update the footer year dynamically
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+  
+    // Add any other dynamic DOM updates here
+    console.log("web.js executed successfully!");
+  });
+  alert("Hello")
 
 //Dynamic Footer Year
-    const footerYearPlace = document.querySelector(".footerYear");
-    const currentYear = new Date();
-    const footerYear = currentYear.getFullYear();
-    const nextYear = footerYear + 1;
-    footerYearPlace.innerHTML = footerYear + "-" + nextYear;
-    
+// const footerYearPlace = $(".footerYear");
+// console.log("footerYearPlace");
+// const currentYear = new Date();
+// const footerYear = currentYear.getFullYear();
+// const nextYear = footerYear + 1;
+// footerYearPlace.innerHTML = footerYear + "-" + nextYear;
 
 
 // Animation to every div
