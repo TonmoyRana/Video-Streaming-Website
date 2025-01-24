@@ -1,10 +1,13 @@
-//Dynamic Footer Year
-const footerYearPlace = $(".footerYear");
-const currentYear = new Date();
-const footerYear = currentYear.getFullYear();
-const nextYear = footerYear + 1;
-footerYearPlace.innerHTML = footerYear + "-" + nextYear;
+//Default Link Set
+const defaultLink = "https://tonmoyrana.github.io/Video-Streaming-Website/";
+$(".logo a").attr("href",defaultLink);
+$(".nav-links li a")[0].href = defaultLink;
 
+// Dynamic Footer Year
+const footerYearPlace = $(".footerYear");
+const currentYear = new Date().getFullYear();
+const nextYear = currentYear + 1;
+footerYearPlace.html(currentYear + "-" + nextYear);
 
 
 // Animation to every div
