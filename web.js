@@ -1,7 +1,18 @@
-// //Default Link Set
-// const defaultLink = "https://tonmoyrana.github.io/Video-Streaming-Website/";
-// document.querySelector(".logo a").href = defaultLink;
-// document.querySelectorAll(".nav-links li a")[0].href = defaultLink;
+//base link set
+// import config from '/config.js'
+
+const base = document.createElement('base');
+    base.href = config.baseHref;
+    document.head.prepend(base);
+
+//Dynamic Footer Year
+    const footerYearPlace = document.querySelector(".footerYear");
+    const currentYear = new Date();
+    const footerYear = currentYear.getFullYear();
+    const nextYear = footerYear + 1;
+    footerYearPlace.innerHTML = footerYear + "-" + nextYear;
+    
+
 
 // Animation to every div
 $("div").addClass("animate__animated animate__fadeInDown");
